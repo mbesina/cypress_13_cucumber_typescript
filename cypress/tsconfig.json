@@ -20,10 +20,9 @@
         "./node_modules/@badeball/cypress-cucumber-preprocessor/esbuild/index"
       ],
       "@support/constants": ["./support/constants"],
-      "@support/enums": ["./support/Common/enum"],
-      "@support/types": ["./support/Common/types"],
-      "@support/utils": ["./support/Common/utils"],
-      "@types/*": ["/types/*"]
+      "@support/enums": ["./support/enum"],
+      "@support/types": ["./support/types"],
+      "@support/utils": ["./support/utils"]
     }
   },
   "include": ["cypress/**/*.ts", "**/*.ts", "e2e/step_definitions/", "cypress/support/**/*.ts"],
