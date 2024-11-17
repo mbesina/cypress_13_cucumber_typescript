@@ -1,11 +1,20 @@
+import {
+  loginPageTitleClass,
+  passwordFieldId,
+  signinLinkId,
+  totalBalanceDivClass,
+  usernameFieldId,
+  headerH6Class,
+} from '@support/constants'
+
 export default class LoginPage {
   elements = {
-    loginPageTitle: () => cy.get('h4[class="auth-header"]'),
-    usernameField: () => cy.get('input[id="username"]'),
-    passwordField: () => cy.get('input[id="password"]'),
-    signinLink: () => cy.get('a[id="log-in"]'),
-    totalBalanceDiv: () => cy.get('div[class="balance-title"]'),
-    headerH6: (sectionTitle: string) => cy.get('h6[class="element-header"]').contains(sectionTitle),
+    loginPageTitle: () => cy.get(`h4[class="${loginPageTitleClass}"]`),
+    usernameField: () => cy.get(`input[id="${usernameFieldId}"]`),
+    passwordField: () => cy.get(`input[id="${passwordFieldId}"]`),
+    signinLink: () => cy.get(`a[id="${signinLinkId}"]`),
+    totalBalanceDiv: () => cy.get(`div[class="${totalBalanceDivClass}"]`),
+    headerH6: (sectionTitle: string) => cy.get(`h6[class="${headerH6Class}"]`).contains(sectionTitle),
   }
 
   enterUsername(username: string) {
