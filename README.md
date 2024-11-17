@@ -2,7 +2,7 @@
 
 Welcome to the **Cypress Automation Framework** repository! This framework is built for end-to-end testing using **Cypress 13**, **TypeScript**, and **Cucumber**. It follows the **Page Object Model (POM)** pattern and incorporates tools like **ESLint**, **Prettier**.
 
-Repository URL: [Cypress Automation Framework](https://github.com/mbesina/cypress_13_cucumber)
+Repository URL: [Cypress Automation Framework](https://github.com/mbesina/cypress_13_cucumber_typescript)
 
 ---
 
@@ -59,8 +59,8 @@ project-root/
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/mbesina/cypress_13_cucumber.git
-   cd cypress_13_cucumber
+   git clone https://github.com/mbesina/cypress_13_cucumber_typescript.git
+   cd cypress_13_cucumber_typescript
    ```
 2. Install dependencies:
    ```bash
