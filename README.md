@@ -32,7 +32,6 @@ project-root/
 │   │   ├── pages/           # Page Object classes
 │   ├── support/
 │   │   ├── commands.ts      # Custom Cypress commands
-│   │   ├── helpers/         # Helper functions
 │   │   ├── utils/           # Utility functions
 │   │   ├── enums/           # Enum definitions
 │   │   ├── types/           # TypeScript custom types
@@ -53,14 +52,13 @@ project-root/
 ### Prerequisites
 
 - Node.js (v18 or later)
-- npm or yarn installed
 
 ### Installation
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/mbesina/cypress_13_cucumber.git
-   cd cypress_13_cucumber
+   git clone https://github.com/mbesina/cypress_13_cucumber_typescript.git
+   cd cypress_13_cucumber_typescript
    ```
 2. Install dependencies:
    ```bash
@@ -100,7 +98,6 @@ npm run cy:run | npx cypress run
 - [Cypress Documentation](https://docs.cypress.io/)
 - [Cucumber Preprocessor for Cypress](https://github.com/badeball/cypress-cucumber-preprocessor)
 - [Cypress-esbuild-preprocessor](@bahmutov/cypress-esbuild-preprocessor)
-- [Gmail Tester](https://github.com/levz0r/gmail-tester)
 
 ---
 
