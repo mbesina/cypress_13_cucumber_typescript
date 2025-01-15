@@ -25,6 +25,6 @@
       "@support/utils": ["./support/utils"]
     }
   },
-  "include": ["cypress/**/*.ts", "**/*.ts", "e2e/step_definitions/", "cypress/support/**/*.ts"],
+  "include": ["cypress/**/*.ts", "**/*.ts", "cypress/step_definitions/*.ts", "cypress/support/**/*.ts"],
   "exclude": ["node_modules"]
 }
