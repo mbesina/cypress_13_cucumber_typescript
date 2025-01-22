@@ -12,7 +12,7 @@ Repository URL: [Cypress Automation Framework](https://github.com/mbesina/cypres
 - **TypeScript**: Strongly-typed support for maintainable and error-free code.
 - **Cucumber**: Write human-readable test cases in Gherkin syntax.
 - **Page Object Model (POM)**: Modular and reusable structure for managing page elements.
-- **ESLint & Prettier**: (In Progress) Linting and code formatting for a consistent codebase.
+- **ESLint & Prettier**: Linting and code formatting for a consistent codebase.
 - **Chance Library**: Generate data for test.
 - **Mocha Reports** (Planned): Generate detailed execution reports for easy analysis.
 - **Gmail Tester** (Planned): Automate email validations, including:
