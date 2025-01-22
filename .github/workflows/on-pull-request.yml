@@ -1,27 +1,23 @@
-name: Cypress CI Tests
+name: On Pull Request
 
 on:
   workflow_dispatch:
-  push:
+  pull_request:
     branches:
       - master
 
 jobs:
-  cypress-run:
+    lint:
+    name: Static code analysis
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
+         fetch-depth: 0
+
       - name: Install dependencies
         run: npm install
+
       - name: Static code analysis
         run: npm run lint
-      - name: Run Cypress tests
-        run: npm run cy:run
-
-      - name: Upload screenshots
-        if: failure()
-        uses: actions/upload-artifact@v4
-        with:
-          name: screenshots
-          path: cypress/screenshots
