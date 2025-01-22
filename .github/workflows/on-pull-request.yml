@@ -7,17 +7,18 @@ on:
       - master
 
 jobs:
-    lint:
-    name: Static code analysis
-    runs-on: ubuntu-latest
+  lint:
+  name: Static code analysis
+  runs-on: ubuntu-latest
 
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
-         fetch-depth: 0
+  steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+      with:
+        fetch-depth: 0
 
-      - name: Install dependencies
-        run: npm install
+    - name: Install dependencies
+      run: npm install
 
-      - name: Static code analysis
-        run: npm run lint
+    - name: Static code analysis
+      run: npm run lint
