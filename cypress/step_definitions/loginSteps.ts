@@ -48,3 +48,7 @@ Then('I see Total Balance section title', () => {
 Then('I see {string} section title', (sectiontitle: string) => {
   loginPage.elements.headerH6(sectiontitle).should(beVisible)
 })
+
+Then('I login by using cypress command', () => {
+  cy.login()
+})

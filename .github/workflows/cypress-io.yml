@@ -9,6 +9,8 @@ on:
 jobs:
   cypress-run:
     runs-on: ubuntu-latest
+    environment: staging
+
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
@@ -16,6 +18,14 @@ jobs:
           fetch-depth: 0
       - name: Install dependencies
         run: npm install
+
+      - name: Create cypress.env.json file
+        run: |
+          touch cypress.env.json
+          echo USERNAME=${{secrets.USERNAME}} >> cypress.env.json
+          echo PASSWORD=${{secrets.PASSWORD}} >> cypress.env.json
+          cat cypress.env.json
+
       - name: Run Cypress tests
         run: npm run cy:run
 
