@@ -1,0 +1,25 @@
+name: Cypress CI Tests
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+
+jobs:
+  cypress-run:
+    runs-on: ubuntu-latest
+    steps:
+      - na,e: Checkout code
+        uses: actions/checkout@v2
+      - name: Install dependencies
+        run: npm install
+      - name: Run Cypress tests
+        run: npm run cy:run
+
+      - name: Upload screenshots
+        if: failure()
+        uses: actions/upload-artifact@v2
+        with: 
+          name: screenshots
+          path: cypress/screenshots
