@@ -6,7 +6,7 @@ Given('I open the homepage', () => {
   cy.visit('/')
 })
 
-Then('I see form title {string}', (title: string) => {
+Then('I see form title {string}', () => {
   loginPage.elements.loginPageTitle().should('be.visible')
 })
 
