@@ -21,10 +21,13 @@ jobs:
 
       - name: Create cypress.env.json file
         run: |
-          touch cypress.env.json
-          echo USERNAME=${{secrets.USERNAME}} >> cypress.env.json
-          echo PASSWORD=${{secrets.PASSWORD}} >> cypress.env.json
-          cat cypress.env.json
+          echo "{
+            \"USERNAME\": \"$USERNAME\",
+            \"PASSWORD\": \"$PASSWORD\"
+          }" > cypress.env.json
+        env:
+          USERNAME: ${{ secrets.USERNAME }}
+          PASSWORD: ${{ secrets.PASSWORD }}
 
       - name: Run Cypress tests
         run: npm run cy:run
