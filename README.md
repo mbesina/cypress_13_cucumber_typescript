@@ -26,11 +26,13 @@ Repository URL: [Cypress Automation Framework](https://github.com/mbesina/cypres
 
 ```
 project-root/
+├── .github/  
+│   ├── workflows/           # CI workflows
 ├── cypress/                 # Cypress test suite folder
 │   ├── e2e/
 │   │   ├── features/        # Gherkin feature files
-│   │   ├── step_definitions/ # Cucumber step definitions
-│   │   ├── pages/           # Page Object classes
+│   ├── step_definitions/    # Cucumber step definitions
+│   ├── pages/               # Page Object classes
 │   ├── support/
 │   │   ├── commands.ts      # Custom Cypress commands
 │   │   ├── utils/           # Utility functions
