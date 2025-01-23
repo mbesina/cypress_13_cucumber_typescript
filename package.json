@@ -1,7 +1,7 @@
 {
   "scripts": {
     "cy:open": "cypress open --browser chrome",
-    "cy:run": "cypress run --browser chrome",
+    "cy:run": "cypress run --browser chrome --record",
     "test:Login": "cypress run --browser chrome --env TAGS=\"@login\"",
     "prettier-format": "prettier --config .prettierrc '**/**/*.ts' --write",
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx"

@@ -33,7 +33,7 @@ export default defineConfig({
   waitForAnimations: true,
   animationDistanceThreshold: 20,
   defaultCommandTimeout: 30000,
-
   trashAssetsBeforeRuns: true,
   screenshotOnRunFailure: true,
+  projectId: 'q4reqk',
 })
