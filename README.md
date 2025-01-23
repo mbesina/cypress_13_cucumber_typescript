@@ -14,9 +14,10 @@ Repository URL: [Cypress Automation Framework](https://github.com/mbesina/cypres
 - **Page Object Model (POM)**: Modular and reusable structure for managing page elements.
 - **ESLint & Prettier**: Linting and code formatting for a consistent codebase.
 - **Chance Library**: Generate data for test.
-- **GitHub Actions**: Implemented workflows for
+- **GitHub Actions**: Implemented workflows for the following:
   - CI Test on push to master
   - Linting on pull requests
+- **Cypress Dashboard**: Integration with Cypress Dashboard.
 - **Mocha Reports** (Planned): Generate detailed execution reports for easy analysis.
 - **Gmail Tester** (Planned): Automate email validations, including:
   - Checking email content, "To" and "From" values.
