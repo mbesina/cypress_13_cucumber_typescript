@@ -29,8 +29,13 @@ jobs:
           USERNAME: ${{ secrets.USERNAME }}
           PASSWORD: ${{ secrets.PASSWORD }}
 
-      - name: Run Cypress tests
-        run: npm run cy:run
+      - name: Cypress Run
+        uses: cypress-io/github-action@v6
+        with:
+          browser: chrome
+          record: true
+        env:
+          CYPRESS_RECORD_KEY: ${{secrets.CYPRESS_RECORD_KEY}}
 
       - name: Upload screenshots
         if: failure()
