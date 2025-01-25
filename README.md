@@ -12,6 +12,7 @@ Repository URL: [Cypress Automation Framework](https://github.com/mbesina/cypres
 - **TypeScript**: Strongly-typed support for maintainable and error-free code.
 - **Cucumber**: Write human-readable test cases in Gherkin syntax.
 - **Page Object Model (POM)**: Modular and reusable structure for managing page elements.
+- **Cypress Testing Library**: Allows the use of dom-testing queries within Cypress end-to-end browser tests.
 - **ESLint & Prettier**: Linting and code formatting for a consistent codebase.
 - **Chance Library**: Generate data for test.
 - **GitHub Actions**: Implemented workflows for the following:
@@ -104,6 +105,7 @@ npm run cy:run | npx cypress run
 - [Cypress Documentation](https://docs.cypress.io/)
 - [Cucumber Preprocessor for Cypress](https://github.com/badeball/cypress-cucumber-preprocessor)
 - [Cypress-esbuild-preprocessor](@bahmutov/cypress-esbuild-preprocessor)
+- [Cypress Testing Library](https://testing-library.com/docs/cypress-testing-library/intro/)
 
 ---
 
