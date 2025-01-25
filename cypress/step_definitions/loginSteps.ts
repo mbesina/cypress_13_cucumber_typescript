@@ -49,6 +49,11 @@ Then('I see {string} section title', (sectiontitle: string) => {
   loginPage.elements.headerH6(sectiontitle).should(beVisible)
 })
 
+// This is an example of using cypress testing-library
+Then('I see Recent Transactions section title', () => {
+  loginPage.elements.recentTransactions().should(beVisible)
+})
+
 Then('I login by using cypress command', () => {
   cy.login()
 })

@@ -19,6 +19,7 @@ Feature: Login Scenario
     Then I see "Financial Overview" section title
     And I see Total Balance section title
     And I see "Recent Transactions" section title
+    And I see Recent Transactions section title
 
   @login
   Scenario: Login successfully by using cypress login command
@@ -26,3 +27,4 @@ Feature: Login Scenario
     Then I see "Financial Overview" section title
     And I see Total Balance section title
     And I see "Recent Transactions" section title
+    And I see Recent Transactions section title
