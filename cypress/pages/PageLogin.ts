@@ -5,6 +5,7 @@ import {
   totalBalanceDivClass,
   usernameFieldId,
   headerH6Class,
+  recentTransactions,
 } from '@support/constants'
 
 export default class LoginPage {
@@ -15,6 +16,7 @@ export default class LoginPage {
     signinLink: () => cy.get(`a[id="${signinLinkId}"]`),
     totalBalanceDiv: () => cy.get(`div[class="${totalBalanceDivClass}"]`),
     headerH6: (sectionTitle: string) => cy.get(`h6[class="${headerH6Class}"]`).contains(sectionTitle),
+    recentTransactions: () => cy.findByRole('heading', { name: recentTransactions }), // captured via cypress testing-library
   }
 
   enterUsername(username: string) {
