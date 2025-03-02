@@ -44,3 +44,9 @@ jobs:
         with:
           name: screenshots
           path: cypress/screenshots
+
+      - name: Upload Mochawesome Report
+        uses: actions/upload-artifact@v3
+        with:
+          name: mochawesome-report
+          path: cypress/reports
