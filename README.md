@@ -19,7 +19,7 @@ Repository URL: [Cypress Automation Framework](https://github.com/mbesina/cypres
   - CI Test on push to master
   - Linting on pull requests
 - **Cypress Dashboard**: Integration with Cypress Dashboard.
-- **Mocha Reports** (Planned): Generate detailed execution reports for easy analysis.
+- **Mochawesome  Reports**: Generate detailed execution reports for easy analysis.
 - **Gmail Tester** (Planned): Automate email validations, including:
   - Checking email content, "To" and "From" values.
   - Refreshing Gmail API tokens.
