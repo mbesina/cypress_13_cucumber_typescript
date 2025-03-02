@@ -2,6 +2,7 @@ import { defineConfig } from 'cypress'
 import createBundler from '@bahmutov/cypress-esbuild-preprocessor'
 import { addCucumberPreprocessorPlugin } from '@badeball/cypress-cucumber-preprocessor'
 import { createEsbuildPlugin } from '@badeball/cypress-cucumber-preprocessor/esbuild'
+import mochawesomePlugin from 'cypress-mochawesome-reporter/plugin'
 
 export default defineConfig({
   e2e: {
@@ -19,11 +20,20 @@ export default defineConfig({
         createBundler({
           plugins: [createEsbuildPlugin(config)],
         })
-      )
+      ),
+        mochawesomePlugin(on)
 
       // Make sure to return the config object as it might have been modified by the plugin.
       return config
     },
+  },
+  reporter: 'cypress-mochawesome-reporter',
+  reporterOptions: {
+    charts: true,
+    reportPageTitle: 'Cypress 13 Demo Report',
+    embeddedScreenshots: true,
+    inlineAssets: true,
+    saveAllAttempts: false,
   },
   experimentalMemoryManagement: true,
   numTestsKeptInMemory: 2,
