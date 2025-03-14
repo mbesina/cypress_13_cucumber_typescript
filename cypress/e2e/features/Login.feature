@@ -10,6 +10,8 @@ Feature: Login Scenario
     And I see the Sign in button
 
   @login
+  @UITest
+  @E2E
   Scenario: Signin to the application
     Given I open the homepage
     And I see form title "Login Form"
@@ -22,6 +24,8 @@ Feature: Login Scenario
     And I see Recent Transactions section title
 
   @login
+  @UITest
+  @Sanity
   Scenario: Login successfully by using cypress login command
     When I login by using cypress command
     Then I see "Financial Overview" section title
